@@ -1,0 +1,11 @@
+# helm-charts/react-chart/values.yaml
+
+# React container image
+image:
+  repository: react-frontend-nginx
+  tag: "latest"
+
+# External access settings
+service:
+  type: LoadBalancer
+  port: 80

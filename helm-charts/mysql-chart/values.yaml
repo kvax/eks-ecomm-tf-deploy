@@ -1,0 +1,14 @@
+# helm-charts/mysql-chart/values.yaml
+
+# Persistent storage settings
+persistence:
+  enabled: true
+  storageClass: "gp2"
+  accessMode: ReadWriteOnce
+  size: 5Gi
+
+# MySQL configurations
+mysqlRootPassword: "rootpassword"
+mysqlDatabase: "ecommerce_db"
+mysqlUser: "flaskuser"
+mysqlPassword: "flaskpassword"

@@ -1,0 +1,23 @@
+# helm-charts/flask-chart/values.yaml
+
+# Flask container image
+image:
+  repository: flask-backend
+  tag: "latest"
+
+# HPA settings
+hpa:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+
+# VPA settings
+vpa:
+  enabled: true
+  minAllowed:
+    cpu: "250m"
+    memory: "128Mi"
+  maxAllowed:
+    cpu: "1"
+    memory: "512Mi"

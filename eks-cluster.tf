@@ -20,10 +20,10 @@ module "eks" {
   }
 }
 
-# Fetch the authentication token for EKS cluster access
-data "aws_eks_cluster_auth" "cluster" {
-  name = module.eks.cluster_id
-}
+# # Fetch the authentication token for EKS cluster access
+# data "aws_eks_cluster_auth" "cluster" {
+#   name = module.eks.cluster_id
+# }
 
 provider "kubernetes" {
   host                   = module.eks.cluster_endpoint
