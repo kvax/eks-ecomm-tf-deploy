@@ -1,0 +1,34 @@
+# flask-backend.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-backend
+  template:
+    metadata:
+      labels:
+        app: flask-backend
+    spec:
+      containers:
+      - name: flask-backend
+        image: drkvax/flask-backend:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: DATABASE_URL
+          value: "mysql://flaskuser:flaskpassword@mysql/ecommerce_db"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-backend
+spec:
+  type: ClusterIP
+  ports:
+    - port: 5000
+  selector:
+    app: flask-backend
