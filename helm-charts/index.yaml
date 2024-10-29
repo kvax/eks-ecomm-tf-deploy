@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  flask-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-10-29T20:04:53.4420387+02:00"
+    description: A Helm chart for flask-backend
+    digest: 6edafff6d303d69ece94ce1e8deeadc25f206ef49d5903478a13ba7c11d47702
+    name: flask-chart
+    type: application
+    urls:
+    - https://github.com/kvax/eks-ecomm-tf-deploy/tree/d3194f0fe81f3faae7427a2af6bc4903ddb9eb61/helm-charts/flask-chart-0.1.0.tgz
+    version: 0.1.0
+  mysql-chart:
+  - apiVersion: v2
+    appVersion: 9.1.0
+    created: "2024-10-29T20:04:53.4425876+02:00"
+    description: A Helm chart for deploying MySQL
+    digest: 599e72adc5ad8b85d46a26b44726695c84fc44a7bc72260a1951c6e382637a05
+    name: mysql-chart
+    type: application
+    urls:
+    - https://github.com/kvax/eks-ecomm-tf-deploy/tree/d3194f0fe81f3faae7427a2af6bc4903ddb9eb61/helm-charts/mysql-chart-0.1.0.tgz
+    version: 0.1.0
+  react-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-10-29T20:04:53.4431369+02:00"
+    description: A Helm chart for react-frontend
+    digest: 189a1beb13c580081f5f3ae52648bce7c6190e89c6358d7ae68feb21dadac5bc
+    name: react-chart
+    type: application
+    urls:
+    - https://github.com/kvax/eks-ecomm-tf-deploy/tree/d3194f0fe81f3faae7427a2af6bc4903ddb9eb61/helm-charts/react-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-29T20:04:53.4414904+02:00"
